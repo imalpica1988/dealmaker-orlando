@@ -212,6 +212,25 @@ form button:disabled{background:var(--teal);cursor:default}
 .price small{font-size:.26em;font-weight:600;letter-spacing:0;color:var(--ash);margin-left:6px}
 .member p{color:var(--ash);max-width:44ch;margin-bottom:28px}
 .member .incl{list-style:none;margin:24px 0 0;padding:22px 0 0;border-top:1px solid rgba(244,241,236,.14)}.member .incl-h{font-family:var(--d);font-size:11px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--sun);margin-bottom:14px}.member .incl li{position:relative;padding-left:24px;margin:11px 0;color:var(--ash);font-size:15px;line-height:1.5}.member .incl li::before{content:"";position:absolute;left:0;top:.46em;width:9px;height:9px;border-radius:2px}.member .incl li:nth-child(5n+1)::before{background:var(--sun)}.member .incl li:nth-child(5n+2)::before{background:var(--ember)}.member .incl li:nth-child(5n+3)::before{background:var(--teal)}.member .incl li:nth-child(5n+4)::before{background:var(--lagoon)}.member .incl li:nth-child(5n)::before{background:#F5921E}.other{display:flex;flex-direction:column}
+/* education */
+.edu{position:relative;border-radius:24px;background:var(--ink-2);box-shadow:0 0 0 1px var(--line) inset;overflow:hidden;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,60px);padding:clamp(28px,4vw,54px)}
+.edu::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--grad)}
+.edu-status{display:inline-flex;align-items:center;gap:9px;font-family:var(--d);font-size:12px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--sun);border:1px solid rgba(249,194,27,.38);border-radius:999px;padding:7px 15px;margin-bottom:22px}
+.edu-status i{width:7px;height:7px;border-radius:50%;background:var(--sun);font-style:normal}
+.edu h3{font-family:var(--d);font-size:clamp(25px,3vw,36px);line-height:1.12;letter-spacing:-.6px;margin:0 0 18px}
+.edu p{color:var(--ash);max-width:46ch}
+.edu .edu-note{color:var(--ash-2);font-size:15px;margin-top:22px}
+.edu-tracks{list-style:none;margin:0;padding:0;align-self:center}
+.edu-tracks li{position:relative;padding:0 0 18px 26px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.edu-tracks li:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.edu-tracks li::before{content:"";position:absolute;left:0;top:.42em;width:10px;height:10px;border-radius:2px}
+.edu-tracks li:nth-child(1)::before{background:var(--sun)}
+.edu-tracks li:nth-child(2)::before{background:var(--ember)}
+.edu-tracks li:nth-child(3)::before{background:var(--teal)}
+.edu-tracks li:nth-child(4)::before{background:var(--lagoon)}
+.edu-tracks h4{font-family:var(--d);font-size:17px;font-weight:600;color:var(--bone);margin:0 0 5px}
+.edu-tracks span{display:block;color:var(--ash);font-size:15px;line-height:1.5}
+@media(max-width:860px){.edu{grid-template-columns:1fr}}
 .other li{flex:1;padding:26px 0;border-top:1px solid var(--line)}
 .other li:last-child{border-bottom:1px solid var(--line)}
 .other .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
@@ -265,6 +284,7 @@ form button:disabled{background:var(--teal);cursor:default}
       <a href="#next">Launch night</a>
       <a href="#events">2027 season</a>
       <a href="#join">Membership</a>
+      <a href="#education">Education</a>
       <a href="#newsletter">Newsletter</a>
       <a href="business-directory.html">Business directory</a>
       <a href="#contact">Contact</a>
@@ -420,6 +440,28 @@ form button:disabled{background:var(--teal);cursor:default}
     <div class="notes">
       <div><h3>$10 admission, raffle entry included</h3><p>Every ticket comes with an entry in the night's 50/50 raffle. Pre-register on Eventbrite, or pay $10 at the door.</p></div>
       <div><h3>Dealmaker discounts</h3><p>Lowe's and Sherwin-Williams pricing plus discounts on software, services and training through Dealmaker Catalyst. <a class="text-link" href="https://elitedealmakers.com/discount/">View member discounts</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <p class="lede" style="margin-top:20px">The meetup gets you the room. The teaching track gets you the reps. Four subjects, taught by people who close deals in these five counties, not by anyone selling a course from a stage.</p>
+    <div class="edu">
+      <div>
+        <div class="edu-status"><i></i>Coming soon</div>
+        <h3>We're building this for 2027.</h3>
+        <p>Short, practical sessions that run alongside the monthly meetup &mdash; small groups, real files, your own deals on the screen. We're shaping the order around what the room actually asks for in the first few months.</p>
+        <p class="edu-note">It will be included for members. Join the list and you'll hear when the first session opens, and you can tell us which subject to teach first.</p>
+        <a class="btn btn-go" href="#connect" style="margin-top:26px">Tell us what to teach first</a>
+      </div>
+      <ul class="edu-tracks">
+        <li><h4>Underwriting a Central Florida deal</h4><span>ARV, rehab budgets and the comps that actually hold up in Orange, Seminole and Osceola.</span></li>
+        <li><h4>Getting the money</h4><span>Hard money, private lenders, DSCR and seller carry &mdash; and the terms local lenders are writing right now.</span></li>
+        <li><h4>Wholesaling that closes</h4><span>Contracts, assignment versus double close, and staying on the right side of Florida's rules.</span></li>
+        <li><h4>Holding it</h4><span>Property management, insurance, taxes, and what a Florida rental really nets after everything.</span></li>
+      </ul>
     </div>
   </div>
 </section>
