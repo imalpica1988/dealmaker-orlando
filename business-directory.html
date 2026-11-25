@@ -48,6 +48,21 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center}
 footer .tag{font-family:'Poppins';font-size:13px;color:var(--sun);font-weight:500;margin-top:8px}
 footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
 @media(max-width:620px){form{grid-template-columns:1fr}nav a{margin-left:0;margin-right:18px}header .wrap{justify-content:center}}
+
+.listings{display:grid;gap:14px;padding:0 0 clamp(30px,5vw,50px)}
+.listings-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:4px}
+.listings-head h2{font-family:'Poppins';font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.02em}
+.listings-head span{font-size:14px;color:var(--ash)}
+.listing{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:24px 26px;display:grid;grid-template-columns:4px 1fr auto;gap:0 20px;align-items:start}
+.listing .key{background:var(--lagoon);border-radius:4px;align-self:stretch;min-height:56px}
+.listing .cat-label{font-family:'Poppins';font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--lagoon)}
+.listing h3{font-family:'Poppins';font-size:19px;font-weight:700;color:var(--bone);letter-spacing:-.01em;margin-top:7px}
+.listing p{font-size:15px;line-height:1.6;color:var(--ash);margin-top:8px;max-width:58ch}
+.listing .contact{font-size:13.5px;line-height:1.7;color:#6B6B74;margin-top:11px}
+.listing .contact a{color:var(--sun);text-decoration:none}
+.listing .contact a:hover{text-decoration:underline}
+.badge{display:inline-block;background:rgba(249,194,27,.1);border:1px solid rgba(249,194,27,.32);color:var(--sun);font-family:'Poppins';font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 13px;border-radius:999px;white-space:nowrap}
+@media(max-width:620px){.listing{grid-template-columns:4px 1fr}.listing .badge{grid-column:2;justify-self:start;margin-top:14px}}
 </style>
 </head>
 <body>
@@ -67,7 +82,7 @@ footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
     <div class="eyebrow">Business directory</div>
     <h1>The people who get your<br>deals <em>across the line</em>.</h1>
     <p class="lead">A directory of the lenders, title companies, contractors, insurance agents and property managers who actually work with Central Florida investors — vetted by the room, not by an ad budget.</p>
-    <span class="pill">Coming soon &middot; business membership $300/year</span>
+    <span class="pill">Opens January 21 &middot; business membership $300/year</span>
   </div>
 </section>
 
@@ -79,6 +94,28 @@ footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
     <div class="cat"><div class="bar" style="background:#0E8AD8"></div><b>Insurance</b><p>Builder's risk, vacant property, landlord policies — Florida-specific.</p></div>
     <div class="cat"><div class="bar" style="background:#8B5A2B"></div><b>Property management</b><p>Managers running single-family and small multifamily across the five counties.</p></div>
     <div class="cat"><div class="bar" style="background:#F5921E"></div><b>Agents &amp; wholesalers</b><p>People bringing real inventory, not recycled listings.</p></div>
+  </div>
+
+
+  <div class="listings">
+    <div class="listings-head">
+      <h2>Founding listings</h2>
+      <span>The first businesses in the room.</span>
+    </div>
+
+    <div class="listing">
+      <div class="key"></div>
+      <div>
+        <div class="cat-label">Insurance</div>
+        <h3>Secured Insurance Group</h3>
+        <p>Auto, homeowners, life and commercial insurance for Central Florida, written out of Lake Mary. Ask for Colleen Pacheco.</p>
+        <div class="contact">
+          <a href="https://securedinsurancegrp.com/" target="_blank" rel="noopener">securedinsurancegrp.com</a> &middot; (407) 559-2200<br>
+          1150 Greenwood Blvd, Suite 1080, Lake Mary, FL 32746
+        </div>
+      </div>
+      <span class="badge">Launch night sponsor</span>
+    </div>
   </div>
 
   <div class="panel">
