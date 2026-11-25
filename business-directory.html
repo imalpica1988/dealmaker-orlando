@@ -53,7 +53,11 @@ footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
 .listings-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:4px}
 .listings-head h2{font-family:'Poppins';font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-.02em}
 .listings-head span{font-size:14px;color:var(--ash)}
-.listing{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:24px 26px;display:grid;grid-template-columns:4px 1fr auto;gap:0 20px;align-items:start}
+.listing{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:24px 26px;display:grid;grid-template-columns:4px 172px 1fr auto;gap:0 24px;align-items:start}
+.listing .logo{display:flex;align-items:center;justify-content:center;background:var(--ink-3);border:1px solid var(--line);border-radius:12px;padding:18px 16px;min-height:92px}
+.listing .logo img{width:100%;height:auto;display:block}
+.listing h3 a{color:var(--bone);text-decoration:none}
+.listing h3 a:hover{color:var(--sun)}
 .listing .key{background:var(--lagoon);border-radius:4px;align-self:stretch;min-height:56px}
 .listing .cat-label{font-family:'Poppins';font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--lagoon)}
 .listing h3{font-family:'Poppins';font-size:19px;font-weight:700;color:var(--bone);letter-spacing:-.01em;margin-top:7px}
@@ -62,7 +66,7 @@ footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
 .listing .contact a{color:var(--sun);text-decoration:none}
 .listing .contact a:hover{text-decoration:underline}
 .badge{display:inline-block;background:rgba(249,194,27,.1);border:1px solid rgba(249,194,27,.32);color:var(--sun);font-family:'Poppins';font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 13px;border-radius:999px;white-space:nowrap}
-@media(max-width:620px){.listing{grid-template-columns:4px 1fr}.listing .badge{grid-column:2;justify-self:start;margin-top:14px}}
+@media(max-width:780px){.listing{grid-template-columns:4px 1fr}.listing .logo{grid-column:2;max-width:200px;margin-bottom:18px}.listing .who{grid-column:2}.listing .badge{grid-column:2;justify-self:start;margin-top:16px}}
 </style>
 </head>
 <body>
@@ -105,9 +109,12 @@ footer .meta{font-size:13px;line-height:1.7;color:#6B6B74;margin-top:16px}
 
     <div class="listing">
       <div class="key"></div>
-      <div>
+      <a class="logo" href="https://securedinsurancegrp.com/" target="_blank" rel="noopener" aria-label="Visit the Secured Insurance Group website">
+        <img src="logo-secured-insurance.png" alt="Secured Insurance Group" width="400" height="168" loading="lazy">
+      </a>
+      <div class="who">
         <div class="cat-label">Insurance</div>
-        <h3>Secured Insurance Group</h3>
+        <h3><a href="https://securedinsurancegrp.com/" target="_blank" rel="noopener">Secured Insurance Group</a></h3>
         <p>Auto, homeowners, life and commercial insurance for Central Florida, written out of Lake Mary. Ask for Colleen Pacheco.</p>
         <div class="contact">
           <a href="https://securedinsurancegrp.com/" target="_blank" rel="noopener">securedinsurancegrp.com</a> &middot; (407) 559-2200<br>
